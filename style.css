@@ -2,15 +2,17 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
+}
+
+h1 {
   font-size: 200%;
 }
 
 h2 {
-  text-align: center;
   font-weight: 100;
-  font-size: 110%;
+  font-size: 130%;
 }
 
 nav {
@@ -23,15 +25,15 @@ nav {
 nav li {
   display: inline-block;
   margin-top: 0;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 1em;
+  margin-left: 1em;
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-.blue-button {
+.button {
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
@@ -40,14 +42,30 @@ nav li {
   display: inline-block;
 } 
 
-.signup-form form input[type=submit] {
-  border: none;
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form {
   text-align: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form input {
+  padding-left: 15px;
+  margin-top: 5px;
+  height: 3em;
+}
+
+.form-name input {
+  width: 14em;
+}
+
+.form-info input {
+  width: 30em;
 }

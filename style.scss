@@ -1,5 +1,26 @@
+
+    $kenzie-blue: #1C3869;
+    $kenzie-gray: #F7F9FA;
+    $kenzie-white: white;
+    $kenzie-font: 'Nunito', sans-serif;
+    @mixin flex-rows {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    @mixin flex-columns{
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: $kenzie-font;
     box-sizing: border-box;
   }
   
@@ -30,9 +51,9 @@ body {
   }
   
   .sub-button {
-    background-color: blue;
+    background-color: $kenzie-blue;
     text-decoration: none;
-    color: white;
+    color: $kenzie-white;
     padding: 0.5em;
     border-radius: 5px;
     width: 8em;
@@ -41,9 +62,7 @@ body {
   } 
   
   .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-columns;
     margin: 2em;
   }
 
@@ -52,11 +71,7 @@ body {
   }
   
   .classes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    @include flex-columns;
       padding: 1em;
       margin: 2em;
   }
@@ -66,32 +81,29 @@ body {
   }
 
   .class-button {
-    font-family: 'Nunito', sans-serif;
-      color: blue;
+    font-family: $kenzie-font;
+      color: $kenzie-blue;
       text-align: center;
       font-size: 1em;
-      background-color: white;
-      border: 1px solid blue;
+      background-color: $kenzie-white;
+      border: 1px solid $kenzie-blue;
       border-radius: 5px;
       padding: 5px 40px 5px 40px;   
   }
 
   .banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      @include flex-columns;
       width: 100%;
       height: 10em;
-      background-color: lightgray;
+      background-color: $kenzie-gray;
   }
 
   .banner-button {
-    font-family: 'Nunito', sans-serif;
-    color: white;
+    font-family: $kenzie-font;
+    color: $kenzie-white;
     text-align: center;
     font-size: 1em;
-    background-color: blue;
+    background-color: $kenzie-blue;
     border-radius: 5px;
     padding: 5px 40px 5px 40px; 
   }
@@ -107,10 +119,7 @@ body {
   }
 
   .group{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    @include flex-columns;
     }
 
     .group p{
@@ -140,11 +149,7 @@ body {
 //   }
 
   .signup-form {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-columns;
     margin-top: 2em;
   }
   
@@ -163,14 +168,12 @@ body {
   }
   
   .testimony {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-columns;
       width: 80%;
     margin-left: 5em;
     margin-right: 5em;
-      border-top: 1px solid lightgray;
-      border-bottom: 1px solid lightgray;
+      border-top: 1px solid $kenzie-gray;
+      border-bottom: 1px solid $kenzie-gray;
     
       display: grid;
       grid-template-columns: auto 50% auto 50%;
@@ -192,11 +195,7 @@ body {
     }
 
     .classes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        @include flex-columns;
         padding: 1em;
         margin: 2em;
     }
@@ -242,11 +241,7 @@ body {
     }
 
     .classes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        @include flex-rows;
         padding: 1em;
         margin: 2em;
     }
@@ -269,10 +264,7 @@ body {
     }
 
     .group-block{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex-rows;
         margin-top: 30px;
       }
 

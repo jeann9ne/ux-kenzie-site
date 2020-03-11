@@ -30,7 +30,7 @@ h2 {
 }
 
 .sub-button {
-  background-color: blue;
+  background-color: #1C3869;
   text-decoration: none;
   color: white;
   padding: 0.5em;
@@ -43,7 +43,9 @@ h2 {
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 2em;
 }
 
@@ -67,23 +69,24 @@ h2 {
 
 .class-button {
   font-family: "Nunito", sans-serif;
-  color: blue;
+  color: #1C3869;
   text-align: center;
   font-size: 1em;
   background-color: white;
-  border: 1px solid blue;
+  border: 1px solid #1C3869;
   border-radius: 5px;
   padding: 5px 40px 5px 40px;
 }
 
 .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
   width: 100%;
   height: 10em;
-  background-color: lightgray;
+  background-color: #F7F9FA;
 }
 
 .banner-button {
@@ -91,7 +94,7 @@ h2 {
   color: white;
   text-align: center;
   font-size: 1em;
-  background-color: blue;
+  background-color: #1C3869;
   border-radius: 5px;
   padding: 5px 40px 5px 40px;
 }
@@ -111,6 +114,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .group p {
@@ -125,10 +129,10 @@ h2 {
 
 .signup-form {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-top: 2em;
 }
 
@@ -148,13 +152,15 @@ h2 {
 
 .testimony {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 80%;
   margin-left: 5em;
   margin-right: 5em;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid #F7F9FA;
+  border-bottom: 1px solid #F7F9FA;
   display: grid;
   grid-template-columns: auto 50% auto 50%;
 }
@@ -225,6 +231,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 30px;
   }
 
